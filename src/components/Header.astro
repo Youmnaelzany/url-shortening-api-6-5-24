@@ -1,0 +1,58 @@
+---
+import "@/styles/globals.css";
+---
+
+<header class="relative mx-6 mt-10 flex items-center justify-between">
+  <div class="flex items-center justify-between gap-[11.43rem]">
+    <img src="/public/images/logo.svg" alt="logo" class="" />
+    <img
+      src="/public/images/icon-menu.svg"
+      alt="menu"
+      class="md:max-2xl:hidden"
+      id="menuBtn"
+    />
+  </div>
+  <nav
+    class="realative absolute top-16 h-[23.9375rem] w-[20.4375rem] rounded-[0.625rem] bg-[#3A3054] after:absolute after:left-6 after:top-[13rem] after:h-[0.0625rem] after:w-[17.4375rem] after:bg-[#9E9AA8] after:opacity-25 md:max-2xl:hidden"
+    id="menuBar"
+  >
+    <ul
+      class="flex flex-col items-center justify-center gap-[1.88rem] px-6 py-10"
+    >
+      <li class="">
+        <a href="/" class="text-lg font-bold leading-normal text-[#fff]"
+          >Features</a
+        >
+      </li>
+      <li class="">
+        <a href="/" class="text-lg font-bold leading-normal text-[#fff]"
+          >Pricing</a
+        >
+      </li>
+      <li class="">
+        <a href="/" class="text-lg font-bold leading-normal text-[#fff]"
+          >Resources</a
+        >
+      </li>
+    </ul>
+    <!-- Buttons -->
+    <div class="mt-4 flex flex-col items-center justify-center gap-6">
+      <button type="button" class="text-lg font-bold leading-normal text-[#fff]"
+        >Login</button
+      >
+      <button
+        type="button"
+        class="h-12 w-[17.4375rem] rounded-[1.75rem] bg-[#2BD0D0] text-lg font-bold leading-normal text-[#fff]"
+        >Sign Up</button
+      >
+    </div>
+  </nav>
+</header>
+
+<script is:inline>
+  const menuBtn = document.getElementById("menuBtn");
+  const menuBar = document.getElementById("menuBar");
+  menuBtn.addEventListener("click", () => {
+    menuBar.classList.toggle("hidden");
+  });
+</script>
