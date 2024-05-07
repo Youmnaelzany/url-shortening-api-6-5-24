@@ -2,16 +2,19 @@
 import "@/styles/globals.css";
 ---
 
-<header class="relative mx-6 mt-10 flex items-center justify-between">
+<header
+  class="relative mx-6 mt-10 xl:ml-[10.47rem] xl:mr-[10.31rem] xl:mt-12 xl:flex xl:items-center xl:justify-between xl:gap-[2.84rem]"
+>
   <div class="flex items-center justify-between gap-[11.43rem]">
-    <img src="/public/images/logo.svg" alt="logo" class="" />
+    <img src="/images/logo.svg" alt="logo" class="" />
     <img
-      src="/public/images/icon-menu.svg"
+      src="/images/icon-menu.svg"
       alt="menu"
       class="md:max-2xl:hidden"
       id="menuBtn"
     />
   </div>
+  <!-- MOBUILE MENU BAR -->
   <nav
     class="realative absolute top-16 h-[23.9375rem] w-[20.4375rem] rounded-[0.625rem] bg-[#3A3054] after:absolute after:left-6 after:top-[13rem] after:h-[0.0625rem] after:w-[17.4375rem] after:bg-[#9E9AA8] after:opacity-25 md:max-2xl:hidden"
     id="menuBar"
@@ -43,6 +46,46 @@ import "@/styles/globals.css";
       <button
         type="button"
         class="h-12 w-[17.4375rem] rounded-[1.75rem] bg-[#2BD0D0] text-lg font-bold leading-normal text-[#fff]"
+        >Sign Up</button
+      >
+    </div>
+  </nav>
+  <!-- DESKTOP MENU BAR -->
+  <nav
+    class="hidden xl:flex xl:items-center xl:justify-between xl:gap-[30.81rem]"
+  >
+    <ul class="flex items-center justify-between gap-[1.81rem]">
+      <li class="">
+        <a
+          href=""
+          class="cursor-pointer text-[0.9375rem] font-bold leading-normal text-[#9E9AA8] transition-colors duration-500 ease-linear hover:text-[#34313D]"
+          >Features</a
+        >
+      </li>
+      <li class="">
+        <a
+          href=""
+          class="mr-[0.19rem] cursor-pointer text-[0.9375rem] font-bold leading-normal text-[#9E9AA8] transition-colors duration-500 ease-linear hover:text-[#34313D]"
+          >Pricing</a
+        >
+      </li>
+      <li class="">
+        <a
+          href=""
+          class="cursor-pointer text-[0.9375rem] font-bold leading-normal text-[#9E9AA8] transition-colors duration-500 ease-linear hover:text-[#34313D]"
+          >Resources</a
+        >
+      </li>
+    </ul>
+    <div class="flex items-center justify-between gap-[2.31rem]">
+      <button
+        type="button"
+        class="cursor-pointer text-[0.9375rem] font-bold leading-normal text-[#9E9AA8]"
+        >Login</button
+      >
+      <button
+        type="button"
+        class="h-10 w-[6.5625rem] cursor-pointer rounded-[1.75rem] bg-[#2BD0D0] text-[0.9375rem] font-bold leading-normal text-[#fff] transition-colors duration-500 ease-linear hover:bg-[#9AE3E3]"
         >Sign Up</button
       >
     </div>
